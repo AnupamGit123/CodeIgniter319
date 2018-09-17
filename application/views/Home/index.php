@@ -77,11 +77,11 @@
 
 
 	<!-- custom js file include  -->
-		<!-- <script type="text/javascript">
+		<script type="text/javascript">
 			$(document).ready(function(){
 				$('.dropdown-trigger').dropdown();
 			});
-		</script> -->
+		</script>
 </body>
 
 
