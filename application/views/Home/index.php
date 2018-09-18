@@ -15,6 +15,10 @@
 	<!-- custom css file section -->
 	<style type="text/css">
 		#top_bar{background: #ce8602}
+		#electronic_menu{width: 75% !important;}
+		#electronic_menu h6{color: orange;}
+		#set_ele_menu a{padding: 0px; color: silver; line-height: 20px; }
+		#set_ele_menu a:hover{background: white; color: black;}
 	</style>
 
 </head>
@@ -40,19 +44,96 @@
 		</nav>
 	<!-- navbar section end -->
 	<!-- menu bar section start -->
-		<nav class="orange" style="height: 35px; line-height: 35px; box-shadow: none;">
+		<nav class="orange" style="height: 35px; line-height: 35px; box-shadow: none; border-top: 1px solid white;">
 
 			<div class="container">
 				<div class="nav-wraper">
 					<ul class="left">
-						<li><a href="#!" class=" dropdown-trigger" data-target="electronics-menu">Electronics</a></li>
+						<li><a href="#!" class=" dropdown-trigger" data-target="electronic_menu">Electronics</a></li>
 						<!--  Electronics dropdown mwnu section start -->
-						<ul class="dropdown-content" id="electronics-menu">
-							<li><a href="">1</a></li>
-							<li><a href="">2</a></li>
-							<li><a href="">3</a></li>
-							<li><a href="">4</a></li>
-							<li><a href="">5</a></li>
+						<ul class="dropdown-content" id="electronic_menu">
+							<div class="row"><!-- menu section start -->
+								<div class="col l3 m6 s12">
+									<h6>Mobiles</h6>
+									<ul id="set_ele_menu">
+										<a href="">Samsung</a>
+										<a href="">Sony</a>
+										<a href="">Oppo</a>
+										<a href="">Vivo</a>
+										<a href="">MI</a>
+										<a href="">Apple</a>
+										<a href="" class="blue-text">View More</a>
+									</ul>
+								</div>
+								<div class="col l3 m6 s12">
+									<h6>Mobile Accessories</h6>
+									<ul id="set_ele_menu">
+										<a href="">Head Phonw</a>
+										<a href="">Power Bank</a>
+										<a href="">Screen Guard</a>
+										<a href="">Memory Card</a>
+										<a href="">Chargers</a>
+										<a href="">Gorilla Glass</a>
+										<a href="" class="blue-text">View More</a>
+									</ul>
+								</div>
+								
+								<div class="col l3 m6 s12">
+									<h6>Laptops</h6>
+									<ul id="set_ele_menu">
+										<a href="">Acer</a>
+										<a href="">Dell</a>
+										<a href="">HP</a>
+										<a href="">Lenevo</a>
+										<a href="">Sony</a>
+										<a href="">Samsung</a>
+										<a href="" class="blue-text">View More</a>
+									</ul>
+								</div>
+								<div class="col l3 m6 s12">
+									<img src="<?= base_url('assets/image/menu-image/1.jpg'); ?>" class="responsive-img" alt=""  style="margin-top: 30px;  ">
+								</div>
+								<div class="col l3 m6 s12">
+									<h6>Tablets</h6>
+									<ul id="set_ele_menu">
+										<a href="">Samsung</a>
+										<a href="">Apple</a>
+										<a href="">Micromax</a>
+										<a href="">Lenevo</a>
+										<a href="">Asus</a>
+										<a href="">Iball</a>
+										<a href="" class="blue-text">View More</a>
+									</ul>
+								</div>
+								<div class="col l3 m6 s12">
+									<h6>Computers</h6>
+									<ul id="set_ele_menu">
+										<a href="">HP</a>
+										<a href="">Dell</a>
+										<a href="">Asus</a>
+										<a href="">Apple</a>
+										<a href="">Lenevo</a>
+										<a href="">Iball</a>
+										<a href="" class="blue-text">View More</a>
+									</ul>
+								</div>
+								<div class="col l3 m6 s12">
+									<h6>Computer Accessories</h6>
+									<ul id="set_ele_menu">
+										<a href="">Hard Disk</a>
+										<a href="">Monitor</a>
+										<a href="">Pendrive</a>
+										<a href="">Mouse</a>
+										<a href="">Keyboard</a>
+										<a href="">RAM</a>
+										<a href="" class="blue-text">View More</a>
+									</ul>
+								</div>
+								<div class="col l3 m6 s12">
+									<img src="<?= base_url('assets/image/menu-image/2.jpg'); ?>" class="responsive-img" alt="" style="margin-top: 10px; height: 120px; ">
+								</div>
+								<!-- Electronics menu section end -->
+							</div>
 						</ul>
 						<!-- Electronics dropdown mwnu section end -->
 						<li><a href="">Men Fashion</a></li>
@@ -76,10 +157,12 @@
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 
 
-	<!-- custom js file include  -->
+	<!-- custom js file include for dropdown menu -->
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('.dropdown-trigger').dropdown();
+				$('.dropdown-trigger').dropdown({
+					coverTrigger:false
+				});
 			});
 		</script>
 </body>
