@@ -13,6 +13,23 @@ class Home extends CI_Controller {
 		$this->load->view('Home/index');
 	}
 
+	public function mElectronicMenu()
+	{
+		$this->load->view('Home/mElectronicProductMenu');
+	}
+
+	public function mMenFashionMenu()
+	{
+		$this->load->view('Home/mMenFashionProductMenu');
+	}
+
+	public function mWomenFashionMenu()
+	{
+		$this->load->view('Home/mWomenFashionProductMenu');
+	}
+
+	
+
 }
 
 /* End of file Home.php */
