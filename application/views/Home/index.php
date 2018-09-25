@@ -34,7 +34,7 @@
 
 		#set_mobile_search{border:1px solid white; background: white; color: black; border-radius: 3px; box-shadow: none; padding-left: 3px; margin-left: -3px;}
 
-		form{display: in}
+		form{display: inline}
 	</style>
 
 </head>
