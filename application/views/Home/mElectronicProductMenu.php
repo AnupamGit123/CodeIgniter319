@@ -29,7 +29,7 @@
 	<div class="hide-on-med-and-down">
 	<br><br>
 	<h1 class="center-align" style="font-size: 8em; color: silver">
-		<fa class="fa fa-android"></fa>
+		<span class="fa fa-android"></span>
 	</h1>
 	<h4 class="center-align red-text">This Page is visible only on Mobile screen.</h4>
 	</div>

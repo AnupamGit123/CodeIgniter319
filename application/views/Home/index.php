@@ -34,7 +34,7 @@
 
 		#set_mobile_search{border:1px solid white; background: white; color: black; border-radius: 3px; box-shadow: none; padding-left: 3px; margin-left: -3px;}
 
-		form{display: in}
+		form{display: inline}
 	</style>
 
 </head>
@@ -1100,7 +1100,7 @@
 						<li><a href="">Login Account</a></li>
 						<li><a href="">Cart</a></li>
 						<li><a href="">Offers</a></li>
-						<li><a href="">Seller Account</a></li>
+						<li><a href="<?= base_url('index.php/Seller/index'); ?>">Seller Account</a></li>
 					</ul>
 				</div>
 				<div class="col l3 m6 s12">
